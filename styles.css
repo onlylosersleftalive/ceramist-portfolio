@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+}
+
+#main-page {
+    width: 100%;
+    height: 100vh;
+    background-color: #F5B22C;
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /* flex-wrap: nowrap; */
+    align-items: center;
+}
+
+.navigation {
+    position: absolute;
+    left: 1700px;
+    top: 27px;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: white;
+}
+
+.img-artist img {
+    width: 581px;
+    height: 669px;
+    z-index: -1;
+}
+
+.name {
+    position: absolute;
+    left: 60px;
+    top: 45px;
+}
+
+.name h1 {
+    font-weight: bold;
+    font-size: 144px;
+}
+
+.introduction h2 {
+    color: #3B51C3;
+    font-weight: 200;
+    font-size: 64px;
+    position: absolute;
+    left: 900px;
+    top: 750px;
+}
+
+
+#works {
+    width: 100%;
+    height: 100vh;
+    background-color: #3B51C3;
+}
+
+.image-1 {
+    position: relative;
+    width: 437px;
+    height: 568px;
+    left: 2%;
+    top: 5%;
+}
+
+.image-2 {
+    position: relative;
+    width: 367px;
+    height: 437px;
+    top: 30%;
+}
+
+.image-3 {
+    position: relative;
+    width: 209px;
+    height: 251px;
+    left: 15%;
+    z-index: 1;
+}
+
+.image-4 {
+    position: relative;
+    width: 278px;
+    height: 326px;
+    left: 10%;
+    bottom: 20%;
+}
+
+.image-5 {
+    position: relative;
+    width: 321px;
+    height: 400px;
+    left: 10%;
+    top: 30%;
+}
+
+#works h1 {
+    position: absolute;
+    font-weight: 300;
+    font-size: 288px;
+    line-height: 337px;
+    color: white;
+}
+
+
+#contacts {
+    width: 100%;
+    height: 100vh;
+    background-color: #F5B22C;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+}
+
+#contacts img {
+    position: relative;
+    width: 40vw;
+    height: 90vh;
+    left: 12%;
+}
+
+.inst {
+    align-self: flex-start;
+    position: relative;
+    left: 20%;
+    top: 15%;
+}
+
+.inst h2 {
+    color: #3B51C3;
+    font-weight: 300;
+    line-height: 75px;
+    text-align: right;
+    letter-spacing: 0.1em;
+}
+
+.inst a {
+    text-decoration: none;
+    color: #3B51C3;
+}
+
+.patreon {
+    align-self: center;
+    position: relative;
+    right: 25%;
+    top: 25%;
+}
+
+.patreon h2 {
+    color: white;
+    font-weight: 300;
+    line-height: 75px;
+    text-align: left;
+    letter-spacing: 0.1em;
+}
+
+.patreon a {
+    text-decoration: none;
+    color: white;
+}
