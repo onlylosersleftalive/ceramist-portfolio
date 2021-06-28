@@ -1,171 +1,237 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Mak;
+  src: url("./font/Mak font/MAK.otf");
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
-    font-size: 24px;
+  font-family: Mak;
+  font-size: 16px;
+  background-color: #f5b22c;
+  color: white;
+  overflow-x: hidden;
+  cursor: default;
 }
 
-#main-page {
-    width: 100%;
-    height: 100vh;
-    background-color: #F5B22C;
-    color: white;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    /* flex-wrap: nowrap; */
-    align-items: center;
+
+/*navbar*/
+
+nav {
+  height: 5vh;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .navigation {
-    position: absolute;
-    left: 1700px;
-    top: 27px;
+  width: 35%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .navigation a {
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
 }
 
-.img-artist img {
-    width: 581px;
-    height: 669px;
-    z-index: -1;
+/*first section*/
+
+#main_page {
+  width: 100vw;
+  height: 95vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-artist {
+  max-width: 60%;
+  height: 80vh;
 }
 
 .name {
-    position: absolute;
-    left: 60px;
-    top: 45px;
+  position: absolute;
+  top: 10%;
+  left: 6%;
+  font-size: 8rem;
 }
 
-.name h1 {
-    font-weight: bold;
-    font-size: 144px;
+/*second section*/
+
+#about_me {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 2.3rem;
 }
 
-.introduction h2 {
-    color: #3B51C3;
-    font-weight: 200;
-    font-size: 64px;
-    position: absolute;
-    left: 900px;
-    top: 750px;
+#about_me .introduction {
+  width: 80%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+/*third section*/
 
 #works {
-    width: 100%;
-    height: 100vh;
-    background-color: #3B51C3;
-}
-
-.image-1 {
-    position: relative;
-    width: 437px;
-    height: 568px;
-    left: 2%;
-    top: 5%;
-}
-
-.image-2 {
-    position: relative;
-    width: 367px;
-    height: 437px;
-    top: 30%;
-}
-
-.image-3 {
-    position: relative;
-    width: 209px;
-    height: 251px;
-    left: 15%;
-    z-index: 1;
-}
-
-.image-4 {
-    position: relative;
-    width: 278px;
-    height: 326px;
-    left: 10%;
-    bottom: 20%;
-}
-
-.image-5 {
-    position: relative;
-    width: 321px;
-    height: 400px;
-    left: 10%;
-    top: 30%;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 #works h1 {
-    position: absolute;
-    font-weight: 300;
-    font-size: 288px;
-    line-height: 337px;
-    color: white;
+  font-size: 4rem;
 }
 
+.carousel {
+  position: relative;
+  display: flex;
+  width: 80%;
+  height: 80%;
+}
+
+.carousel_item,
+.carousel_item--hidden {
+  width: 100%;
+  height: 100%;
+  display: none;
+  text-align: center;
+}
+
+.carousel_item img {
+  max-width: 100%;
+  max-height: 100%;
+  min-width: 250px;
+  min-height: 300px;
+}
+
+.carousel_item--visible {
+  display: block;
+}
+
+.carousel_actions {
+  width: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.carousel_actions button {
+  margin: 0 5%;
+  border-radius: 50%;
+  border: 0;
+  cursor: pointer;
+  width: 3rem;
+  height: 3rem;
+  background-color: white;
+  color: #f5b22c;
+  font-weight: bold;
+}
+
+/*third section*/
 
 #contacts {
-    width: 100%;
+  width: 100vw;
+  height: 30vh;
+  font-size: 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#contacts a {
+  color: white;
+}
+
+
+/*footer*/
+
+footer {
+  width: 100vw;
+  height: 5vh;
+  text-align: center;
+}
+
+/*media queries*/
+
+@media (max-width: 1200px) {
+  .carousel_actions {
+    width: 25%;
+    position: relative;
+  }
+}
+
+@media (max-width: 1000px) {
+  .navigation a {
+    font-size: 1rem;
+  }
+
+  .name {
+    font-size: 2.5rem;
+  }
+
+  .img-artist {
+    display: none;
+  }
+
+  #main_page {
+    background-image: url("images/130498230_209204754126170_8340285128414934849_n.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+
+  #about_me {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 700px) {
+  nav {
+    display: none;
+  }
+
+  #main_page {
     height: 100vh;
-    background-color: #F5B22C;
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-    align-items: center;
-}
+  }
 
-#contacts img {
-    position: relative;
-    width: 40vw;
-    height: 90vh;
-    left: 12%;
-}
+  #about_me {
+    font-size: 1rem;
+  }
 
-.inst {
-    align-self: flex-start;
-    position: relative;
-    left: 20%;
-    top: 15%;
-}
+  .carousel {
+    height: 60%;
+  }
 
-.inst h2 {
-    color: #3B51C3;
-    font-weight: 300;
-    line-height: 75px;
-    text-align: right;
-    letter-spacing: 0.1em;
-}
+  .carousel_actions button {
+    width: 2rem;
+    height: 2rem;
+  }
 
-.inst a {
-    text-decoration: none;
-    color: #3B51C3;
-}
+  #contacts {
+    font-size: 1.5rem;
+  }
 
-.patreon {
-    align-self: center;
-    position: relative;
-    right: 25%;
-    top: 25%;
-}
+  footer {
+    font-size: 0.5rem;
+  }
 
-.patreon h2 {
-    color: white;
-    font-weight: 300;
-    line-height: 75px;
-    text-align: left;
-    letter-spacing: 0.1em;
-}
-
-.patreon a {
-    text-decoration: none;
-    color: white;
 }
