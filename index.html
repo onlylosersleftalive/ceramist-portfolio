@@ -2,56 +2,97 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PORFARFOR</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="./styles.css">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PORFARFOR</title>
+  <link rel="icon" href="images/21294350_115072432509389_2592561754445709312_a.jpg">
+  <link rel="stylesheet" href="./styles.css" />
 </head>
 
 <body>
-    <div id="main-page">
-        <div class="navigation">
-            <div><a href="#works">Работы</a></div>
-            <div><a href="#contacts">Контакты</a></div>
+  <main>
+    <nav>
+      <div class="navigation">
+        <a href="#about_me">Обо мне</a>
+        <a href="#works">Работы</a>
+        <a href="#contacts">Контакты</a>
+      </div>
+    </nav>
+    <section id="main_page">
+      <h1 class="name">PORFARFOR</h1>
+      <img class="img-artist" src="images/130498230_209204754126170_8340285128414934849_n.jpg" alt="" />
+    </section>
+    <section id="about_me">
+      <div class="introduction">
+        <span>меня зовут Лена, сейчас я занимаюсь керамикой и личными проектами по иллюстрации, а ещё учу людей
+          разным
+          штукам. вообще я думаю, что учиться и учить - моё самое важное дело, и керамика вписывается в него как
+          кусочек.
+          второе важное дело - шутить про всякое и перебарывать страх. по правде, я трусишка и частенько боюсь (тут и
+          страх отказов, и своей некомпетентности, и много чего еще). и вот я пытаюсь говорить про это и разъёбывать
+          (или если не получается, то пытаюсь принять), и вот уже страх становится чем-то совсем другим. а шутить
+          смешные
+          (или дурацко-смешные) шутки просто помогает, ну вы и сами знаете.</span>
+      </div>
+    </section>
+    <section id="works">
+      <h1>РАБОТЫ</h1>
+
+      <div class="carousel">
+        <div class="carousel_item carousel_item--visible">
+          <img src="images/116353072_1020149728402931_3718245653331494074_n.jpg" alt="" />
         </div>
-        <div class="name">
-            <h1>PORFARFOR</h1>
+        <div class="carousel_item">
+          <img src="images/110493956_1953164154819760_1227599942822378792_n.jpg" alt="" />
         </div>
-        <div class="img-artist">
-            <img src="images/130498230_209204754126170_8340285128414934849_n.jpg" alt="">
+        <div class="carousel_item">
+          <img src="images/133897270_2518944248406822_8751390697618469204_n.jpg" alt="" />
         </div>
-        <div class="introduction">
-            <h2>Привет! Меня зовут Лена Козлова, и я делаю керамику</h2>
+        <div class="carousel_item">
+          <img src="images/123008740_1422128961327288_5470396152781695982_n.jpg" alt="" />
         </div>
-    </div>
-    <div id="works">
-        <img class="image-1" src="images/116353072_1020149728402931_3718245653331494074_n.jpg" alt="">
-        <img class="image-2" src="images/110493956_1953164154819760_1227599942822378792_n.jpg" alt="">
-        <img class="image-3" src="images/133897270_2518944248406822_8751390697618469204_n.jpg" alt="">
-        <img class="image-4" src="images/123008740_1422128961327288_5470396152781695982_n.jpg" alt="">
-        <img class="image-5" src="images/95438471_260586925069531_7719069033484361458_n.jpg" alt="">
-        <h1>РАБОТЫ</h1>
-    </div>
-    <div id="contacts">
-        <div class="contacts-image">
-            <img src="images\60316280_299506647620577_8363264436908896604_n.jpg" alt="">
+        <div class="carousel_item">
+          <img src="images\60316280_299506647620577_8363264436908896604_n.jpg" alt="" />
         </div>
-        <div class="inst">
-            <h2>приобрести работы и записаться на мастер-класс можно через <a
-                    href="https://www.instagram.com/porfarfor/" target="_blank" rel="noopener noreferrer">instagram</a>
-            </h2>
+        <div class="carousel_item">
+          <img src="images/95438471_260586925069531_7719069033484361458_n.jpg" alt="" />
         </div>
-        <div class="circle"></div>
-        <div class="patreon">
-            <h2>также можно поддержать меня на <a href="https://www.patreon.com/porfarfor" target="_blank"
-                    rel="noopener noreferrer">патреоне</a></h2>
+        <div class="carousel_item">
+          <img src="images/52002844_394012751375487_8661035809923320040_n.jpg" alt="" />
         </div>
-    </div>
-    <script src="./app.js"></script>
+        <div class="carousel_item">
+          <img src="images/102963369_2906791779370232_7365346529860563457_n.jpg" alt="" />
+        </div>
+        <div class="carousel_item">
+          <img src="images/133276035_223672505995095_6031671235873983403_n.jpg" alt="" />
+        </div>
+        <div class="carousel_item">
+          <img src="images\160997309_347229186670180_4326250669121020003_n.jpg" alt="" />
+        </div>
+      </div>
+      <div class="carousel_actions">
+        <button id="prevBtn" aria-label="previous slide">🡸</button>
+        <button id="nextBtn" aria-label="next slide">🡺</button>
+      </div>
+    </section>
+    <section id="contacts">
+      <div id="patreon">
+        <span>
+          также можно поддержать меня на
+          <a href="https://www.patreon.com/porfarfor" target="_blank" rel="noopener noreferrer">патреоне</a>
+        </span>
+      </div>
+      <div id="inst">
+        <span>
+          приобрести работы и записаться на мастер-класс можно через
+          <a href="https://www.instagram.com/porfarfor/" target="_blank" rel="noopener noreferrer">instagram</a>
+        </span>
+      </div>
+    </section>
+  </main>
+  <footer>Made by Sveta M.</footer>
+  <script src="./app.js"></script>
 </body>
 
 </html>
