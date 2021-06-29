@@ -7,6 +7,6 @@ Landing page for the ceramist's portfolio.
 You can see demo of this web-site [here](https://onlylosersleftalive.github.io/ceramist-portfolio/).
 
 ## Technologies
-* HTMl
+* HTML
 * CSS
 * JavaScript
